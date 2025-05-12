@@ -1,7 +1,11 @@
 name: Continuous integration with Maven
 
+<<<<<<< HEAD
 on: 
 	[push, pull_request]
+=======
+on: [push, pull_request]
+>>>>>>> e3111bce7fc0979328c531dbdee73c7eb2a80acb
 
 
 jobs:
@@ -27,4 +31,3 @@ jobs:
       env:
         COVERALLS_REPO_TOKEN: ${{secrets.COVERALLS_REPO_TOKEN}}
       run: mvn coveralls:report
-      
