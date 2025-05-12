@@ -1,11 +1,6 @@
 name: Continuous integration with Maven
 
-<<<<<<< HEAD
-on: 
-	[push, pull_request]
-=======
 on: [push, pull_request]
->>>>>>> e3111bce7fc0979328c531dbdee73c7eb2a80acb
 
 
 jobs:
@@ -18,7 +13,7 @@ jobs:
     - name: Set up JDK 1.8
       uses: actions/setup-java@v3
       with:
-        java-version: '8.0.412+8'
+        java-version: '21.0.6+8'
         distribution: 'temurin'
         cache: maven
     - name: Coveralls GitHub Action
